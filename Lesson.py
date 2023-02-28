@@ -35,7 +35,8 @@ else:
 #nums = [1, 3, 5, 6], target = 2, Output: 1
 
 a=[1, 3, 5, 6]
-t=0
+t=int(input('Enter mumber: '))
+
 s=list(range(a[0], (t+1)))
 if t in a: print(a.index(t))
 else: 
