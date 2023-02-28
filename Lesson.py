@@ -20,6 +20,15 @@ else: print(0)
 #Օրինակ՝
 #string = “Hello”, number = 2, bool = True, Output: loHel
 
+a=[1, 3, 5, 6]
+t=0
+s=list(range(a[0], (t+1)))
+if t in a: print(a.index(t))
+else: 
+    if t in s: print(s.index(t))
+    else: print('%d not in list' % (t))
+
+
 #5.Տրված է սորտավորված լիստ և մեկ կամայական թիվ։ Գրել ֆունկցիա, որը կվերադարձնի այդ թվի ինդեքսը լիստում, եթե այն առկա է, հակառակ դեպքում այն ինդեքսը, որտեղ որ կլիներ այդ թիվը, եթե պարունակվեր լիստում։
 #Օրինակ՝
 #nums = [1, 3, 5, 6], target = 5, Output: 2
