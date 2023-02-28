@@ -8,13 +8,10 @@
 
 str1 = input('Enter string1: ')
 str2=input('Enter string2: ')
-
-if set(str1)==set(str2):
-    print(0)
-else:
-    print(list(set(str1)-set(str2)))
-    if (str1 != str2):
-        print(-1)
+if len(str1)!=len(str2) :
+    print(-1)
+elif len(set(str1)-set(str2))!=0: print(list(set(str1)-set(str2)))
+else: print(0)
 
 
                                                                                                                                                                                                                                                     
