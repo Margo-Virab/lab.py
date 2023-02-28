@@ -38,6 +38,15 @@ else:
 
 
 #6.Գրել ծրագիր, որը կստանա երկու թիվ՝ m(rows) և n(columns), և կգեներացնի երկչափ զանգված(մատրից)։ i-րդ տողի j-րդ սյունակի էլեմենտը պետք է լինի i*j։ Փորձեք խնդիրը լուծել՝ օգտագործելով list comprehension:
+m_row = int(input("Input number of rows: "))
+n_col = int(input("Input number of columns: "))
+matrix = [[0 for col in range(n_col)] for row in range(m_row)]
+
+for row in range(m_row):
+    for col in range(n_col):
+        matrix[row][col]= row*col
+
+print(matrix)
 
 #7.Գրել ծրագիր, որը ստուգում է՝ տրված գաղտնաբառը վավեր է, թե ոչ։ Գաղտնաբառը վավեր է, եթե պարունակում է.
 #Առնվազն մեկ մեծատառ
